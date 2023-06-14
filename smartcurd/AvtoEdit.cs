@@ -63,7 +63,7 @@ namespace smartcurd
                         CRUD.PerformCRUD(CRUD.cmd);
                     }
                 }
-                else if (this.saveavto.Text == "Insert")
+                else if (this.saveavto.Text == "Сохранить")
                 {
                     CRUD.sql = "INSERT INTO avto(price, nalichie, salon_id) VALUES (@price, @nalichie, @salon_id)";
                     CRUD.cmd = new NpgsqlCommand(CRUD.sql, CRUD.con);
@@ -120,7 +120,7 @@ namespace smartcurd
             if ((l < 'А' || l > 'я') && (l < 'A' || l > 'z') && l != '\b')
             {
                 e.Handled = true;
-                MessageBox.Show("Только буковы русского алфавита");
+                MessageBox.Show("Только буквы русского алфавита");
             }
         }
 
@@ -130,7 +130,7 @@ namespace smartcurd
             if ((l < 'А' || l > 'я') && (l < 'A' || l > 'z') && l != '\b' && (l < '0' || l > '9'))
             {
                 e.Handled = true;
-                MessageBox.Show("Только буковы");
+                MessageBox.Show("Только буквы");
             }
         }
     }

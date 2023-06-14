@@ -48,7 +48,18 @@
             this.updateavto = new System.Windows.Forms.Button();
             this.insertavto = new System.Windows.Forms.Button();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.searchbutton = new System.Windows.Forms.Button();
+            this.updatebutton = new System.Windows.Forms.Button();
+            this.deletebutton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.keywordtextBox = new System.Windows.Forms.TextBox();
+            this.firstnametextBox = new System.Windows.Forms.TextBox();
+            this.lastnametextBox = new System.Windows.Forms.TextBox();
+            this.insertbutton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gendercomboBox = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.serchbuttonemplo = new System.Windows.Forms.Button();
@@ -64,17 +75,6 @@
             this.closzakazbutton = new System.Windows.Forms.Button();
             this.serchzakaztextBox = new System.Windows.Forms.TextBox();
             this.insertzakazbutton = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.gendercomboBox = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.insertbutton = new System.Windows.Forms.Button();
-            this.lastnametextBox = new System.Windows.Forms.TextBox();
-            this.firstnametextBox = new System.Windows.Forms.TextBox();
-            this.keywordtextBox = new System.Windows.Forms.TextBox();
-            this.deletebutton = new System.Windows.Forms.Button();
-            this.updatebutton = new System.Windows.Forms.Button();
-            this.searchbutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -104,11 +104,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(387, 18);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(388, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 23);
+            this.label1.Size = new System.Drawing.Size(99, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Искра";
             // 
@@ -128,8 +128,8 @@
             // 
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.Brown;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(96, 17);
-            this.toolStripStatusLabel1.Text = "Number of rows:";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(10, 17);
+            this.toolStripStatusLabel1.Text = " ";
             // 
             // contextMenuStrip1
             // 
@@ -227,9 +227,9 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridViewAvto);
             this.tabPage2.Controls.Add(this.serchavto);
             this.tabPage2.Controls.Add(this.deleteavto);
-            this.tabPage2.Controls.Add(this.dataGridViewAvto);
             this.tabPage2.Controls.Add(this.updateavto);
             this.tabPage2.Controls.Add(this.insertavto);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -244,7 +244,7 @@
             // serchavto
             // 
             this.serchavto.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.serchavto.Location = new System.Drawing.Point(511, 11);
+            this.serchavto.Location = new System.Drawing.Point(692, 11);
             this.serchavto.Margin = new System.Windows.Forms.Padding(2);
             this.serchavto.Name = "serchavto";
             this.serchavto.Size = new System.Drawing.Size(82, 28);
@@ -256,7 +256,7 @@
             // deleteavto
             // 
             this.deleteavto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deleteavto.Location = new System.Drawing.Point(786, 11);
+            this.deleteavto.Location = new System.Drawing.Point(784, 62);
             this.deleteavto.Margin = new System.Windows.Forms.Padding(2);
             this.deleteavto.Name = "deleteavto";
             this.deleteavto.Size = new System.Drawing.Size(90, 28);
@@ -282,7 +282,7 @@
             // updateavto
             // 
             this.updateavto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updateavto.Location = new System.Drawing.Point(692, 11);
+            this.updateavto.Location = new System.Drawing.Point(692, 62);
             this.updateavto.Margin = new System.Windows.Forms.Padding(2);
             this.updateavto.Name = "updateavto";
             this.updateavto.Size = new System.Drawing.Size(90, 28);
@@ -294,7 +294,7 @@
             // insertavto
             // 
             this.insertavto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.insertavto.Location = new System.Drawing.Point(598, 11);
+            this.insertavto.Location = new System.Drawing.Point(781, 11);
             this.insertavto.Margin = new System.Windows.Forms.Padding(2);
             this.insertavto.Name = "insertavto";
             this.insertavto.Size = new System.Drawing.Size(90, 28);
@@ -323,8 +323,44 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(878, 489);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "test";
+            this.tabPage1.Text = " ";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // searchbutton
+            // 
+            this.searchbutton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.searchbutton.Location = new System.Drawing.Point(599, 11);
+            this.searchbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.searchbutton.Name = "searchbutton";
+            this.searchbutton.Size = new System.Drawing.Size(57, 28);
+            this.searchbutton.TabIndex = 2;
+            this.searchbutton.Text = "Search";
+            this.searchbutton.UseVisualStyleBackColor = true;
+            this.searchbutton.Click += new System.EventHandler(this.searchbutton_Click);
+            // 
+            // updatebutton
+            // 
+            this.updatebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.updatebutton.Location = new System.Drawing.Point(720, 11);
+            this.updatebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.updatebutton.Name = "updatebutton";
+            this.updatebutton.Size = new System.Drawing.Size(68, 28);
+            this.updatebutton.TabIndex = 8;
+            this.updatebutton.Text = "Update";
+            this.updatebutton.UseVisualStyleBackColor = true;
+            this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
+            // 
+            // deletebutton
+            // 
+            this.deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.deletebutton.Location = new System.Drawing.Point(793, 11);
+            this.deletebutton.Margin = new System.Windows.Forms.Padding(2);
+            this.deletebutton.Name = "deletebutton";
+            this.deletebutton.Size = new System.Drawing.Size(62, 28);
+            this.deletebutton.TabIndex = 9;
+            this.deletebutton.Text = "Delete";
+            this.deletebutton.UseVisualStyleBackColor = true;
+            this.deletebutton.Click += new System.EventHandler(this.deletebutton_Click);
             // 
             // dataGridView1
             // 
@@ -341,13 +377,98 @@
             this.dataGridView1.TabIndex = 10;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // keywordtextBox
+            // 
+            this.keywordtextBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.keywordtextBox.Location = new System.Drawing.Point(387, 11);
+            this.keywordtextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.keywordtextBox.Name = "keywordtextBox";
+            this.keywordtextBox.Size = new System.Drawing.Size(209, 32);
+            this.keywordtextBox.TabIndex = 1;
+            // 
+            // firstnametextBox
+            // 
+            this.firstnametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.firstnametextBox.Location = new System.Drawing.Point(8, 20);
+            this.firstnametextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.firstnametextBox.Name = "firstnametextBox";
+            this.firstnametextBox.Size = new System.Drawing.Size(114, 23);
+            this.firstnametextBox.TabIndex = 4;
+            // 
+            // lastnametextBox
+            // 
+            this.lastnametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lastnametextBox.Location = new System.Drawing.Point(135, 20);
+            this.lastnametextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.lastnametextBox.Name = "lastnametextBox";
+            this.lastnametextBox.Size = new System.Drawing.Size(114, 23);
+            this.lastnametextBox.TabIndex = 5;
+            // 
+            // insertbutton
+            // 
+            this.insertbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.insertbutton.Location = new System.Drawing.Point(661, 11);
+            this.insertbutton.Margin = new System.Windows.Forms.Padding(2);
+            this.insertbutton.Name = "insertbutton";
+            this.insertbutton.Size = new System.Drawing.Size(55, 28);
+            this.insertbutton.TabIndex = 7;
+            this.insertbutton.Text = "Insert";
+            this.insertbutton.UseVisualStyleBackColor = true;
+            this.insertbutton.Click += new System.EventHandler(this.insertbutton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(4, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "First name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(132, 2);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Last name";
+            // 
+            // gendercomboBox
+            // 
+            this.gendercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gendercomboBox.FormattingEnabled = true;
+            this.gendercomboBox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.gendercomboBox.Location = new System.Drawing.Point(262, 19);
+            this.gendercomboBox.Margin = new System.Windows.Forms.Padding(2);
+            this.gendercomboBox.Name = "gendercomboBox";
+            this.gendercomboBox.Size = new System.Drawing.Size(114, 25);
+            this.gendercomboBox.TabIndex = 6;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(260, 2);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(56, 17);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Gender";
+            // 
             // tabControl
             // 
             this.tabControl.Controls.Add(this.tabPage1);
             this.tabControl.Controls.Add(this.tabPage2);
             this.tabControl.Controls.Add(this.tabPage3);
-            this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Controls.Add(this.tabPage5);
+            this.tabControl.Controls.Add(this.tabPage4);
             this.tabControl.Location = new System.Drawing.Point(0, 73);
             this.tabControl.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl.Name = "tabControl";
@@ -368,7 +489,7 @@
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(878, 489);
             this.tabPage4.TabIndex = 4;
-            this.tabPage4.Text = "Работники";
+            this.tabPage4.Text = " ";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // serchbuttonemplo
@@ -529,127 +650,6 @@
             this.insertzakazbutton.Text = "Добавить заказ";
             this.insertzakazbutton.UseVisualStyleBackColor = true;
             this.insertzakazbutton.Click += new System.EventHandler(this.insertzakazbutton_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(260, 2);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 17);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Gender";
-            // 
-            // gendercomboBox
-            // 
-            this.gendercomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gendercomboBox.FormattingEnabled = true;
-            this.gendercomboBox.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.gendercomboBox.Location = new System.Drawing.Point(262, 19);
-            this.gendercomboBox.Margin = new System.Windows.Forms.Padding(2);
-            this.gendercomboBox.Name = "gendercomboBox";
-            this.gendercomboBox.Size = new System.Drawing.Size(114, 25);
-            this.gendercomboBox.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(132, 2);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Last name";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(4, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "First name";
-            // 
-            // insertbutton
-            // 
-            this.insertbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.insertbutton.Location = new System.Drawing.Point(661, 11);
-            this.insertbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.insertbutton.Name = "insertbutton";
-            this.insertbutton.Size = new System.Drawing.Size(55, 28);
-            this.insertbutton.TabIndex = 7;
-            this.insertbutton.Text = "Insert";
-            this.insertbutton.UseVisualStyleBackColor = true;
-            this.insertbutton.Click += new System.EventHandler(this.insertbutton_Click);
-            // 
-            // lastnametextBox
-            // 
-            this.lastnametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lastnametextBox.Location = new System.Drawing.Point(135, 20);
-            this.lastnametextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.lastnametextBox.Name = "lastnametextBox";
-            this.lastnametextBox.Size = new System.Drawing.Size(114, 23);
-            this.lastnametextBox.TabIndex = 5;
-            // 
-            // firstnametextBox
-            // 
-            this.firstnametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.firstnametextBox.Location = new System.Drawing.Point(8, 20);
-            this.firstnametextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.firstnametextBox.Name = "firstnametextBox";
-            this.firstnametextBox.Size = new System.Drawing.Size(114, 23);
-            this.firstnametextBox.TabIndex = 4;
-            // 
-            // keywordtextBox
-            // 
-            this.keywordtextBox.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.keywordtextBox.Location = new System.Drawing.Point(387, 11);
-            this.keywordtextBox.Margin = new System.Windows.Forms.Padding(2);
-            this.keywordtextBox.Name = "keywordtextBox";
-            this.keywordtextBox.Size = new System.Drawing.Size(209, 32);
-            this.keywordtextBox.TabIndex = 1;
-            // 
-            // deletebutton
-            // 
-            this.deletebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.deletebutton.Location = new System.Drawing.Point(793, 11);
-            this.deletebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.deletebutton.Name = "deletebutton";
-            this.deletebutton.Size = new System.Drawing.Size(62, 28);
-            this.deletebutton.TabIndex = 9;
-            this.deletebutton.Text = "Delete";
-            this.deletebutton.UseVisualStyleBackColor = true;
-            this.deletebutton.Click += new System.EventHandler(this.deletebutton_Click);
-            // 
-            // updatebutton
-            // 
-            this.updatebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.updatebutton.Location = new System.Drawing.Point(720, 11);
-            this.updatebutton.Margin = new System.Windows.Forms.Padding(2);
-            this.updatebutton.Name = "updatebutton";
-            this.updatebutton.Size = new System.Drawing.Size(68, 28);
-            this.updatebutton.TabIndex = 8;
-            this.updatebutton.Text = "Update";
-            this.updatebutton.UseVisualStyleBackColor = true;
-            this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
-            // 
-            // searchbutton
-            // 
-            this.searchbutton.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.searchbutton.Location = new System.Drawing.Point(599, 11);
-            this.searchbutton.Margin = new System.Windows.Forms.Padding(2);
-            this.searchbutton.Name = "searchbutton";
-            this.searchbutton.Size = new System.Drawing.Size(57, 28);
-            this.searchbutton.TabIndex = 2;
-            this.searchbutton.Text = "Search";
-            this.searchbutton.UseVisualStyleBackColor = true;
-            this.searchbutton.Click += new System.EventHandler(this.searchbutton_Click);
             // 
             // Form1
             // 

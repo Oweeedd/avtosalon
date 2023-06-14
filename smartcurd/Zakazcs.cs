@@ -41,7 +41,7 @@ namespace smartcurd
                         CRUD.cmd.Parameters.AddWithValue("data_start", dataopenmaskedTextBox.Text.Trim());
                         CRUD.PerformCRUD(CRUD.cmd);
                         
-            MessageBox.Show("Save him!!!!", "Insert Data",
+            MessageBox.Show("Заказ создан успешно", "Insert Data",
                     MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         this.Close();
                     }
@@ -81,7 +81,7 @@ namespace smartcurd
         private void button1_Click(object sender, EventArgs e)
         {
             ClientEdit addClient = new ClientEdit();
-            addClient.saveclient.Text = "Insert";
+            addClient.saveclient.Text = "Сохранить";
             addClient.ShowDialog();
 
             CRUD.sql = "SELECT id FROM client";

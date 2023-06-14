@@ -98,7 +98,7 @@ namespace smartcurd
             if ((l < 'А' || l > 'я') && l != '\b' && l != '.' && l !=' ')
             {
                 e.Handled = true;
-                MessageBox.Show("Только русские буковы");
+                MessageBox.Show("Только буквы русского алфавита");
             }
             /*(System.Text.RegularExpressions.Regex.IsMatch(lastnameTextBox.Text, "[^а-яА-Я]"))
             {
@@ -113,7 +113,7 @@ namespace smartcurd
             if ((l < '0' || l > '9') && l != '\b' && l != '.')
             {
                 e.Handled = true;
-                MessageBox.Show("Только сифры");
+                MessageBox.Show("Только цифры");
             }
                /* (System.Text.RegularExpressions.Regex.IsMatch(numberTextBox.Text, "[^0-9]"))
             {

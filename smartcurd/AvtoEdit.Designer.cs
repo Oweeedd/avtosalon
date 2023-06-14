@@ -413,35 +413,35 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Wide Latin", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(150, 20);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(214, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 23);
+            this.label1.Size = new System.Drawing.Size(166, 29);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Okno udovolsvi";
+            this.label1.Text = "Автомобиль";
             // 
             // exitavto
             // 
             this.exitavto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.exitavto.Location = new System.Drawing.Point(284, 64);
+            this.exitavto.Location = new System.Drawing.Point(298, 64);
             this.exitavto.Margin = new System.Windows.Forms.Padding(2);
             this.exitavto.Name = "exitavto";
-            this.exitavto.Size = new System.Drawing.Size(65, 28);
+            this.exitavto.Size = new System.Drawing.Size(82, 28);
             this.exitavto.TabIndex = 23;
-            this.exitavto.Text = "Exit";
+            this.exitavto.Text = "Выход";
             this.exitavto.UseVisualStyleBackColor = true;
             this.exitavto.Click += new System.EventHandler(this.exitavto_Click);
             // 
             // saveavto
             // 
             this.saveavto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.saveavto.Location = new System.Drawing.Point(212, 64);
+            this.saveavto.Location = new System.Drawing.Point(205, 64);
             this.saveavto.Margin = new System.Windows.Forms.Padding(2);
             this.saveavto.Name = "saveavto";
-            this.saveavto.Size = new System.Drawing.Size(55, 28);
+            this.saveavto.Size = new System.Drawing.Size(89, 28);
             this.saveavto.TabIndex = 22;
-            this.saveavto.Text = "Save";
+            this.saveavto.Text = "Сохранить";
             this.saveavto.UseVisualStyleBackColor = true;
             this.saveavto.Click += new System.EventHandler(this.saveavto_Click);
             // 
@@ -450,10 +450,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(561, 429);
+            this.Controls.Add(this.saveavto);
             this.Controls.Add(this.exitavto);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.saveavto);
             this.Name = "AvtoEdit";
             this.Text = "AvtoEdit";
             this.tableLayoutPanel1.ResumeLayout(false);
